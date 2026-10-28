@@ -1,5 +1,7 @@
 # Khushvindar Singh Choudhary — Portfolio
 
+**Live:** https://khushvindar.vercel.app — every push to `master` redeploys automatically on Vercel.
+
 A 3D portfolio built around one living object: a sculpture of up to ~100,000 GPU-simulated particles. It plays the intro, follows the cursor like a force field, and morphs into a new shape for every section.
 
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · React Three Fiber + Drei · @react-three/postprocessing · custom GLSL (GPGPU via `GPUComputationRenderer`) · GSAP + ScrollTrigger · Lenis · Framer Motion · detect-gpu
@@ -60,6 +62,8 @@ Copy `title` and `path` into `src/content/icons.ts` under the slug.
 ---
 
 ## Deploying to Vercel
+
+This repo is already connected to the Vercel project `portfolio` (production domain `khushvindar.vercel.app`), so pushing to `master` deploys it. To set it up from scratch somewhere else:
 
 1. Push this folder to a GitHub repo.
 2. On vercel.com: **Add New → Project → Import** the repo. The defaults are correct (framework: Next.js, no environment variables).
